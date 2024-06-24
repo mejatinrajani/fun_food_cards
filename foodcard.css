@@ -1,0 +1,118 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+header nav ul li a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.4);
+}
+
+main {
+    background-image: url('restaurant-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px; /* Padding for content inside main */
+    min-height: 100vh; /* Ensure the main section takes up at least the height of the viewport */
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.5, 0.5);
+    max-width: 600px;
+    height: 500px;
+    width: 500px;
+    margin-left: 15%;
+    text-align: center;
+    transition: transform 0.5s ease; /* Increase the transition time for a smoother effect */
+    perspective: 1000px; /* Adding perspective for 3D effect */
+    transform: rotateY(180deg); /* Initial rotation */
+}
+
+.card:hover {
+    transform: rotateY(0deg); /* Straighten on hover */
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+#ee{
+    margin-left: 67%;
+}
